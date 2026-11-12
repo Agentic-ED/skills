@@ -21,6 +21,6 @@ Read the skill's `SKILL.md` and any `references/`. Report each item as ✅ / ⚠
 - **Size**: SKILL.md under ~500 lines; long material in `references/`.
 - **Education quality**: age/grade-appropriate, accessible, tells the agent not to invent facts/citations/standards codes.
 - **Safety & privacy**: no student data, personal info, secrets, or unlicensed copyrighted content.
-- **Registration**: listed in its guild `README.md`.
+- **Registration**: listed in its guild `MANIFESTO.md` skills table; has a `README.md`; `icon.png` present (recommended).
 
 Do not rewrite instructions or examples without asking — propose concrete edits and let the contributor choose. End with "Ready for PR" or the list of blockers.

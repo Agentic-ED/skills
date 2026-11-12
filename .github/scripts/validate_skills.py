@@ -9,8 +9,9 @@ Checks
   - `name`: required, lowercase letters/digits/hyphens, <= 64 chars, matches the folder name
   - `description`: required, non-empty string, <= 1024 chars
   - optional `compatibility` <= 500 chars; optional `metadata` is a mapping
+  - each skill folder has a README.md (human-facing); icon.png is recommended (warning only)
   - skill names are unique across guilds
-  - each guild folder has a README.md and a CODEOWNERS entry
+  - each guild folder has a MANIFESTO.md and a CODEOWNERS entry
 
 Usage: python3 .github/scripts/validate_skills.py [path-to-skill-dir ...]
 Exit code 1 if any check fails.
@@ -28,6 +29,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 FRONTMATTER_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.DOTALL)
+WARNINGS: list[str] = []
 
 
 def guild_dirs() -> list[Path]:
@@ -66,6 +68,10 @@ def check_skill(skill_dir: Path) -> list[str]:
         return [f"{rel}/SKILL.md: frontmatter must be a mapping"]
 
     errors = []
+    if not (skill_dir / "README.md").exists():
+        errors.append(f"{rel}: missing README.md (human-facing overview of the skill)")
+    if not (skill_dir / "icon.png").exists():
+        WARNINGS.append(f"{rel}: no icon.png (recommended)")
     name = fm.get("name")
     if not isinstance(name, str) or not name:
         errors.append(f"{rel}/SKILL.md: `name` is required")
@@ -102,8 +108,8 @@ def main(argv: list[str]) -> int:
         skills = []
         for guild in guild_dirs():
             rel = guild.relative_to(ROOT).as_posix()
-            if not (guild / "README.md").exists():
-                errors.append(f"{rel}/: guild folder needs a README.md (what the guild covers, who maintains it)")
+            if not (guild / "MANIFESTO.md").exists():
+                errors.append(f"{rel}/: guild folder needs a MANIFESTO.md (what the guild covers, who maintains it, its skills)")
             if rel not in owned:
                 errors.append(f"{rel}/: add a CODEOWNERS line for this guild, e.g. `/{rel}/ @Agentic-ED/{rel}-guild`")
             skills += sorted(p for p in guild.iterdir() if p.is_dir() and not p.name.startswith((".", "_")))
@@ -115,8 +121,11 @@ def main(argv: list[str]) -> int:
             errors.append(f"{skill.relative_to(ROOT)}: skill name duplicates {seen[skill.name].relative_to(ROOT)}")
         seen[skill.name] = skill
 
+    gha = "GITHUB_ACTIONS" in os.environ
+    for w in WARNINGS:
+        print(f"::warning::{w}" if gha else f"! {w}")
     for e in errors:
-        print(f"::error::{e}" if "GITHUB_ACTIONS" in os.environ else f"✗ {e}")
+        print(f"::error::{e}" if gha else f"✗ {e}")
     print(f"Checked {len(skills)} skill(s): {'FAILED' if errors else 'OK'} ({len(errors)} error(s))")
     return 1 if errors else 0
 

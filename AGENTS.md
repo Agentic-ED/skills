@@ -17,7 +17,7 @@ This repo is a library of Agent Skills for education. You are most likely here t
 
 ## Boundaries
 - Only edit the guild folder you were asked to work in. Do not edit `CODEOWNERS`, `.github/`, `LICENSE`, or `_template/` unless explicitly asked.
-- When you add a skill, also add it to that guild's `README.md`. When you add a guild, also add a CODEOWNERS line and a row in the root README guild index.
+- When you add a skill, also add it to that guild's `MANIFESTO.md` skills table and give the skill a `README.md` (human-facing) and ideally an `icon.png`. When you add a guild, also add a CODEOWNERS line and a row in the root README guild index.
 
 ## Before you finish
 Run `python3 .github/scripts/validate_skills.py` (requires `pyyaml`) and fix every error. CI runs the same check on every PR.

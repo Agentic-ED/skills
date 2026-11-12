@@ -17,4 +17,21 @@
 /CODEOWNERS             @sethluersen
 
 # Guilds (one line per guild folder)
-# /assessment/          @Agentic-ED/assessment-guild
+/certification/              @sethluersen    # → @Agentic-ED/certification-guild
+/curriculum-development/     @sethluersen    # → @Agentic-ED/curriculum-development-guild
+/instructional-design/       @sethluersen    # → @Agentic-ED/instructional-design-guild
+/training/                   @sethluersen    # → @Agentic-ED/training-guild
+/customer-education/         @sethluersen    # → @Agentic-ED/customer-education-guild
+/customer-enablement/        @sethluersen    # → @Agentic-ED/customer-enablement-guild
+/sales-enablement/           @sethluersen    # → @Agentic-ED/sales-enablement-guild
+/partner-enablement/         @sethluersen    # → @Agentic-ED/partner-enablement-guild
+/learning-and-development/   @sethluersen    # → @Agentic-ED/learning-and-development-guild
+/data-telemetry/             @sethluersen    # → @Agentic-ED/data-telemetry-guild
+/learning-marketing/         @sethluersen    # → @Agentic-ED/learning-marketing-guild
+/learning-operations/        @sethluersen    # → @Agentic-ED/learning-operations-guild
+/media-visual-design/        @sethluersen    # → @Agentic-ED/media-visual-design-guild
+/content-technical-writing/  @sethluersen    # → @Agentic-ED/content-technical-writing-guild
+/knowledge-management/       @sethluersen    # → @Agentic-ED/knowledge-management-guild
+/community-events/           @sethluersen    # → @Agentic-ED/community-events-guild
+/newcomers/                  @sethluersen    # → @Agentic-ED/newcomers-guild
+/maintainers/                @sethluersen    # → @Agentic-ED/maintainers-guild

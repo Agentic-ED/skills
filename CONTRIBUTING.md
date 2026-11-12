@@ -6,13 +6,17 @@ Thanks for helping educators get more out of AI. This guide covers how skills ar
 
 ```
 <guild>/                 # one folder per guild, owned in CODEOWNERS
-  README.md              # what the guild covers, maintainers, list of its skills
+  MANIFESTO.md           # required — focus, principles, maintainers, skills table
   <skill-name>/
-    SKILL.md             # required — frontmatter + instructions
+    SKILL.md             # required — frontmatter + instructions for the agent
+    README.md            # required — human-facing overview (used by the website)
+    icon.png             # recommended — square PNG, 512×512, the guild mascot style
     references/          # optional — longer material loaded only when needed
     scripts/ assets/     # optional — helper scripts, templates, examples
-_template/SKILL.md       # copy this to start
+_template/               # copy this folder to start (SKILL.md + README.md)
 ```
+
+Guilds and their mascots are listed in the [README guild index](README.md#guild-index).
 
 ## PR flow
 
@@ -36,7 +40,8 @@ Copy into your PR description:
 - [ ] Tested on 3+ realistic prompts (list them), including one it should NOT trigger on
 - [ ] Output is age/grade-appropriate, accessible, and invents no facts, citations, or standards codes
 - [ ] No student data, personal information, or copyrighted material without permission
-- [ ] Guild README.md lists the new skill
+- [ ] Skill has a README.md (copy `_template/README.md`) and an icon.png (recommended, square PNG, 512×512)
+- [ ] Guild MANIFESTO.md skills table lists the new skill
 - [ ] `python3 .github/scripts/validate_skills.py` passes
 ```
 
@@ -46,7 +51,7 @@ A guild is a group that owns one area (for example assessment, lesson planning, 
 
 1. Open an issue proposing the guild: its focus, at least two maintainers, and two or three starter skills.
 2. A repo maintainer creates the GitHub team `@Agentic-ED/<guild>-guild`.
-3. In your PR: add `<guild>/README.md`, a CODEOWNERS line `/<guild>/ @Agentic-ED/<guild>-guild`, and a row in the README guild index.
+3. In your PR: add `<guild>/MANIFESTO.md` (copy an existing guild's as a starting point), a CODEOWNERS line `/<guild>/ @Agentic-ED/<guild>-guild`, and a row in the README guild index.
 
 ## Code of conduct
 
