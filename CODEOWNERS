@@ -1,0 +1,20 @@
+# Each guild owns its folder and reviews PRs that touch it.
+# Later lines win, so the catch-all comes first and guild lines follow.
+#
+# To add a guild:
+#   1. Create the GitHub team @Agentic-ED/<guild>-guild
+#   2. Create the folder <guild>/ with a README.md
+#   3. Add a line:  /<guild>/  @Agentic-ED/<guild>-guild
+# The "Validate skills" check fails if a guild folder has no line here.
+
+# Repo-wide default (maintainers) — replace with @Agentic-ED/maintainers once that team exists
+*                       @sethluersen
+
+# Repo infrastructure
+/.github/               @sethluersen
+/.claude/               @sethluersen
+/_template/             @sethluersen
+/CODEOWNERS             @sethluersen
+
+# Guilds (one line per guild folder)
+# /assessment/          @Agentic-ED/assessment-guild
