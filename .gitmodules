@@ -70,3 +70,7 @@
 	path = herd-learning-management-systems
 	url = https://github.com/Agentic-ED/herd-learning-management-systems.git
 	branch = main
+[submodule "pride-content-as-code"]
+	path = pride-content-as-code
+	url = https://github.com/Agentic-ED/pride-content-as-code.git
+	branch = main

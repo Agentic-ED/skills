@@ -19,6 +19,7 @@ Each guild repo keeps skills in `skills/<skill>/` and agents in `agents/<agent>/
 | The Parliament | Certification | [parliament-certification](https://github.com/Agentic-ED/parliament-certification) |
 | The Ostentation | Community and events | [ostentation-community-events](https://github.com/Agentic-ED/ostentation-community-events) |
 | The Bouquet | Content and technical writing | [bouquet-content-technical-writing](https://github.com/Agentic-ED/bouquet-content-technical-writing) |
+| The Pride | Content As Code | [pride-content-as-code](https://github.com/Agentic-ED/pride-content-as-code) |
 | The Colony | Curriculum development | [colony-curriculum-development](https://github.com/Agentic-ED/colony-curriculum-development) |
 | The Exaltation | Customer education | [exaltation-customer-education](https://github.com/Agentic-ED/exaltation-customer-education) |
 | The Caravan | Customer enablement | [caravan-customer-enablement](https://github.com/Agentic-ED/caravan-customer-enablement) |
