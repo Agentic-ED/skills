@@ -1,33 +1,76 @@
-[submodule "dazzle-learning-marketidazzle-learning-marketidazzle-learninotion"]
-	path = dazzle-learning-marketidazzle-learning-marketidazzle-learninotion
-	url = https://github.com/Agentic-ED/dazzle-learning-marketidazzle-learning-marketidazzle-learninotion.git
-[submodule "sleuth-data-telesleuth-data-telesleuth-dataetry"]
-	path = sleuth-data-telesleuth-data-telesleuth-dataetry
-	url = https://github.com/Agentic-ED/sleuth-data-telesleuth-data-telesleuth-dataetry.git
 [submodule "wisdom-learning-and-development"]
 	path = wisdom-learning-and-development
 	url = https://github.com/Agentic-ED/wisdom-learning-and-development.git
+	branch = main
 [submodule "murmuration-partner-enablement"]
 	path = murmuration-partner-enablement
 	url = https://github.com/Agentic-ED/murmuration-partner-enablement.git
+	branch = main
 [submodule "charm-sales-enablement"]
 	path = charm-sales-enablement
 	url = https://github.com/Agentic-ED/charm-sales-enablement.git
+	branch = main
 [submodule "caravan-customer-enablement"]
 	path = caravan-customer-enablement
 	url = https://github.com/Agentic-ED/caravan-customer-enablement.git
+	branch = main
 [submodule "exaltation-customer-education"]
 	path = exaltation-customer-education
 	url = https://github.com/Agentic-ED/exaltation-customer-education.git
+	branch = main
 [submodule "romp-training"]
 	path = romp-training
 	url = https://github.com/Agentic-ED/romp-training.git
+	branch = main
 [submodule "kaleidoscope-instructional-design"]
 	path = kaleidoscope-instructional-design
 	url = https://github.com/Agentic-ED/kaleidoscope-instructional-design.git
+	branch = main
 [submodule "colony-curriculum-development"]
 	path = colony-curriculum-development
 	url = https://github.com/Agentic-ED/colony-curriculum-development.git
+	branch = main
 [submodule "parliament-certification"]
 	path = parliament-certification
 	url = https://github.com/Agentic-ED/parliament-certification.git
+	branch = main
+[submodule "dazzle-learning-marketing"]
+	path = dazzle-learning-marketing
+	url = https://github.com/Agentic-ED/dazzle-learning-marketing.git
+	branch = main
+[submodule "sleuth-data-telemetry"]
+	path = sleuth-data-telemetry
+	url = https://github.com/Agentic-ED/sleuth-data-telemetry.git
+	branch = main
+[submodule "convocation-maintainers"]
+	path = convocation-maintainers
+	url = https://github.com/Agentic-ED/convocation-maintainers.git
+	branch = main
+[submodule "ostentation-community-events"]
+	path = ostentation-community-events
+	url = https://github.com/Agentic-ED/ostentation-community-events.git
+	branch = main
+[submodule "memory-knowledge-management"]
+	path = memory-knowledge-management
+	url = https://github.com/Agentic-ED/memory-knowledge-management.git
+	branch = main
+[submodule "bouquet-content-technical-writing"]
+	path = bouquet-content-technical-writing
+	url = https://github.com/Agentic-ED/bouquet-content-technical-writing.git
+	branch = main
+[submodule "bloom-media-visual-design"]
+	path = bloom-media-visual-design
+	url = https://github.com/Agentic-ED/bloom-media-visual-design.git
+	branch = main
+[submodule "hive-learning-operations"]
+	path = hive-learning-operations
+	url = https://github.com/Agentic-ED/hive-learning-operations.git
+	branch = main
+[submodule "herd-learning-management-systems"]
+	path = herd-learning-management-systems
+	url = https://github.com/Agentic-ED/herd-learning-management-systems.git
+	branch = main
+[submodule "pride-content-as-code"]
+	path = pride-content-as-code
+	url = https://github.com/Agentic-ED/pride-content-as-code.git
+	branch = main
